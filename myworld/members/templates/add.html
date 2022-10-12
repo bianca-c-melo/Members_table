@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<link rel="stylesheet" href="{% static 'add.css' %}" />
+<html lang="en">
+  <body>
+    <div class="container">
+      <h1>Cadastrar</h1>
+
+      <form action="addrecord/" method="post">
+        {% csrf_token %}
+        <div class="inputs">
+          <label>Nome</label>
+          <input
+            type="nome"
+            name="first"
+            placeholder="Digite seu primeiro nome"
+          />
+          <label>Sobrenome</label>
+          <input
+            type="sobrenome"
+            name="last"
+            placeholder="Digite seu sobrenome"
+          />
+
+          <button type="submit">ENVIAR</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

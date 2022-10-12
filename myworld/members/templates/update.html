@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<link rel="stylesheet" href="{% static 'add.css' %}" />
+<html lang="en">
+   <body>
+      <div class="container">
+      <h1>Atualizar</h1>
+      <form action="updaterecord/{{ mymember.id }}" method="post">
+         {% csrf_token %}
+         <div class="inputs">
+         <label>Nome</label>
+         <input name="first" value="{{ mymember.firstname }}"/>
+         <label>Sobrenome</label>
+         <input name="last" value="{{ mymember.lastname }}"/>
+         <button type="submit">ENVIAR</button>
+      </form>
+   </body>
+</html>
