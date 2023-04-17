@@ -1,5 +1,5 @@
 """
-WSGI config for myworld project.
+WSGI config for members_table project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,7 +11,7 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'myworld.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'table_config.settings')
 
 application = get_wsgi_application()
 

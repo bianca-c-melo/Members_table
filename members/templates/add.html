@@ -6,18 +6,18 @@
     <div class="container">
       <h1>Cadastrar</h1>
 
-      <form action="addrecord/" method="post">
+      <form action="add_record/" method="post">
         {% csrf_token %}
         <div class="inputs">
           <label>Nome</label>
           <input
-            type="nome"
+            type="text"
             name="first"
             placeholder="Digite seu primeiro nome"
           />
           <label>Sobrenome</label>
           <input
-            type="sobrenome"
+            type="text"
             name="last"
             placeholder="Digite seu sobrenome"
           />
