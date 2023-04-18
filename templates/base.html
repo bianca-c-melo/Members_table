@@ -1,7 +1,6 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
- 
   <link rel="stylesheet" href="{% static 'table.css' %}" />
   <body>
   <div class="container">
@@ -18,10 +17,10 @@
       <tbody>
         <tr>
           {% for x in mymembers %}
-          <td><a href="update/{{ x.id }}" >{{ x.id }} <img src="{% static "edit.png" %}" width="16px" /> </a></td>
+          <td><a href="update/{{ x.id }}" >{{ x.id }} <img src="{% static 'edit.png' %}" width="16px" /> </a></td>
           <td>{{ x.firstname }}</td>
           <td>{{ x.lastname }}</td>
-          <td><a href="delete/{{ x.id }}" ><img src="{% static "delete.png" %}" width="24px"/></a></td>
+          <td><a href="delete/{{ x.id }}" ><img src="{% static 'delete.png' %}" width="24px"/></a></td>
         </tr>
         {% endfor %}
       </tbody>
